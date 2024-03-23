@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Register Form</title>
+    <link rel="stylesheet" href="/static/ERF.css">
+</head>
+<body>
+    <div class="container">
+        <form action="http://127.0.0.1:5000/resulterf" method="post" class="form-section" enctype="multipart/form-data">
+            <div class="header-name">    
+                <div class="name-section">
+                    <h1>Emploee Registration</h1>
+                    <h1>Name</h1>
+                    <input type="text" name="firstname" id="" class="input-format" placeholder="First Name" required>
+                    <input type="text" name="middlename" id="" class="input-format" placeholder="Middle Name" required>
+                    <input type="text" name="lastname" id="" class="input-format" placeholder="Last Name" required>
+                </div>
+                <div class="address-section">
+                    <textarea name="address" id="" cols="35" rows="5" placeholder="Address" class="input-format"required></textarea>
+                    <input type="number" name="salary" id="" placeholder="Salary" class="input-format" required>
+                    <span><input type="radio" name="gender" id="" value="Male" required>&nbsp;&nbsp;Male</span>
+                    <span><input type="radio" name="gender" id="" value="Female" required>&nbsp;&nbsp;Female</span>
+                </div>
+            </div>
+            <div class="formater">
+                <div class="personal-section">
+                    <h1>Personal Details</h1>
+                    <label for="DOB"><div class="dob">Date-of-Birth</div></label>
+                    <input type="date" name="dateofbirth" class="input-format" required>
+                    <input type="number" name="grades" id="" placeholder="12th Grades" class="input-format" required>
+                    <input type="number" name="age" id="" placeholder="Age" class="input-format" required>
+                    <input type="file" name="file" id="" class="input-format" required>
+                    <div class="btn-section">
+                        <input type="submit" value="Register" class="btn" name="regbtn">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='Home.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Contact us</li>
+                <li>Pricing</li>
+                <li>About us</li>
+                <div class="right-section">
+                    <form action="http://127.0.0.1:5000/login" method="post">
+                        <li><input type="submit" value="Log out" class="btn" name="logoutbtn"></li>
+                    </form>
+                </div>
+            </ul>
+        </div>
+         <div class="spacer"></div>
+         <div class="img-section">
+            <b>Welcome to EMS : {{ name }}</b>
+         </div>
+        <div class="body-section">
+            <div class="info-section">
+                <h1>Employee Management System.</h1>
+                <div class="spacer"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam neque vero illo sapiente corrupti eligendi facere sunt consectetur animi nulla?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus in aperiam, quibusdam quaerat illo libero aliquid? Vitae molestias explicabo totam in incidunt dolor molestiae. Commodi nam distinctio beatae tempore quia.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus error facilis numquam dolore adipisci culpa sint libero, laboriosam consequuntur ullam, laudantium, quibusdam quisquam! Quis asperiores sequi autem quod. Ipsa, nemo!
+                </p>
+                <br><br>
+                <form action="http://127.0.0.1:5000/rendererf" method="post">
+                    <input type="submit" value=" Employee Register" class="btn" name="erf">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

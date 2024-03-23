@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  margin-top: 25px;
+}
+.email-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  row-gap: 10px;
+}
+.name-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  row-gap: 10px;
+  margin-top: 5px;
+}
+.mobile-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  row-gap: 10px;
+  margin-top: 5px;
+}
+.password-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  row-gap: 10px;
+  margin-top: 5px;
+}
+.btn-section {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: end;
+}
+.form-section {
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 15px #edf2f4;
+  max-width: 400px;
+  padding: 20px 20px;
+  margin: auto;
+  margin-top: 5px;
+}
+.btn {
+  padding: 13px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to top right, #62b6cb, #1b4965);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.header-section {
+  font-size: 2rem;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+.input-format {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.font-format {
+  font-weight: bold;
+  font-size: 1.2rem;
+}

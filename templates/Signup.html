@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Employee</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='Signup.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form action="http://127.0.0.1:5000/resultsignup" method="post" class="form-section">
+            <div class="header-section">
+                Sign Up
+            </div>
+            <div class="email-section">
+                <label for="Email"><div class="font-format">Email</div></label>
+                <input type="email" name="email" class="input-format" required>
+            </div>
+            <div class="name-section">
+                <label for="Name"><div class="font-format">Name</div></label>
+                <input type="text" name="name" class="input-format" required>
+            </div>
+            <div class="mobile-section">
+                <label for="Mobile"><div class="font-format">Mobile</div></label>
+                <input type="text" name="mobile" class="input-format" maxlength="10" required>
+            </div>
+            <div class="password-section">
+                <label for="Password"><div class="font-format">Password</div></label>
+                <input type="password" class="input-format" maxlength="6" name="password">
+                <label for="Confirm Password">
+                    <div class="font-format">Confirm Password</div>
+                </label>
+                <input type="password" class="input-format" maxlength="6" name="conpassword">
+            </div>
+            <div class="btn-section">
+                <input type="submit" value="Sign up" class="btn" name="subbtn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            {% set user = data %}
+            <p>ID : {{ user[0] }}</p>
+            <input type="text" value="{{ user[1] }}">
+            <p>First Name : {{ user[1] }}</p>
+            <p>Middle Name : {{ user[2] }}</p>
+            <p>Last Name : {{ user[3] }}</p>
+        </div>
+    </div>
+</body>
+</html>

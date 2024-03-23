@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='Admin.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1>Admin</h1>
+        </div>
+        <form>
+            <table class="table">
+                <tr>
+                    <td class="inner-data"><b>ID</b></td>
+                    <td class="inner-data"><b>First</b></td>
+                    <td class="inner-data"><b>Middle</b></td>
+                    <td class="inner-data"><b>Last</b></td>
+                    <td class="inner-data"><b>Address</b></td>
+                    <td class="inner-data"><b>Salary</b></td>
+                    <td class="inner-data"><b>Gender</b></td>
+                    <td class="inner-data"><b>DOB</b></td>
+                    <td class="inner-data"><b>Grades</b></td>
+                    <td class="inner-data"><b>Age</b></td>
+                    <td class="inner-data"><b>Profile</b></td>
+                </tr>
+                {% for user in userDetails %}
+                    <tr class="inner-data">
+                        <td class="display-data">{{ user[0] }}</td>
+                        <td class="display-data">{{ user[1] }}</td>
+                        <td class="display-data">{{ user[2] }}</td>
+                        <td class="display-data">{{ user[3] }}</td>
+                        <td class="display-data">{{ user[4] }}</td>
+                        <td class="display-data">{{ user[5] }}</td>
+                        <td class="display-data">{{ user[6] }}</td>
+                        <td class="display-data">{{ user[7] }}</td>
+                        <td class="display-data">{{ user[8] }}</td>
+                        <td class="display-data">{{ user[9] }}</td>
+                        <td class="display-data"><img src="{{ url_for('display_image' ,filename=user[10]) }}" alt="Error" width="100"></td>
+                        <td class="display-data"><button class="btn-green"><a href="display_data/{{ user[0] }}" class="link">Update</a></button></td>
+                        <td class="display-data"><button class="btn-red"><a href="delete/{{ user[0] }}" class="link">Delete</a></button></td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <div class="btn-box">
+                <button type="submit" class="btn"><a class="link" href="/ascending">Ascending</a></button>
+                <button type="submit" class="btn"><a class="link" href="/descending">Descending</a></button>
+                <button type="submit" class="btn"><a class="link" href="/admin">Reset</a></button>
+                <button type="submit" class="logout-btn"><a class="link format" href="/login">Logout</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
